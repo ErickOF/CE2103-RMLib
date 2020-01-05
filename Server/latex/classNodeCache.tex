@@ -1,0 +1,264 @@
+\hypertarget{classNodeCache}{}\section{Node\+Cache Class Reference}
+\label{classNodeCache}\index{Node\+Cache@{Node\+Cache}}
+
+
+The Node class.  
+
+
+
+
+{\ttfamily \#include $<$nodecache.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classNodeCache_a7e621b939cdbc80967e6590b8ad86d73}{count\+\_\+accessed} ()\hypertarget{classNodeCache_a7e621b939cdbc80967e6590b8ad86d73}{}\label{classNodeCache_a7e621b939cdbc80967e6590b8ad86d73}
+
+\begin{DoxyCompactList}\small\item\em Count a new access to this node. \end{DoxyCompactList}\item 
+\hyperlink{classNodeCache_adec4f6cc00d2453f4da34c06e241d874}{Node\+Cache} (string data, string key)
+\begin{DoxyCompactList}\small\item\em Constuctor. \end{DoxyCompactList}\item 
+\hyperlink{classNodeCache_ad17fbdbc7a4fe97645919d7ebd88edbe}{$\sim$\+Node\+Cache} ()\hypertarget{classNodeCache_ad17fbdbc7a4fe97645919d7ebd88edbe}{}\label{classNodeCache_ad17fbdbc7a4fe97645919d7ebd88edbe}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classNodeCache_a78c4d4818132f8acace40f5c9a95a526}{get\+\_\+accessed} ()
+\begin{DoxyCompactList}\small\item\em Return how many accessed have had this node. \end{DoxyCompactList}\item 
+string \hyperlink{classNodeCache_ae11cea2fa334e2f653d46938ac4c97a8}{get\+\_\+data} ()
+\begin{DoxyCompactList}\small\item\em Returns the data stores in this node. \end{DoxyCompactList}\item 
+string \hyperlink{classNodeCache_a9d41e568632b7382a7f470c70c416028}{get\+\_\+key} ()
+\begin{DoxyCompactList}\small\item\em Returns the key to identify this node. \end{DoxyCompactList}\item 
+\hyperlink{classNodeCache}{Node\+Cache} $\ast$ \hyperlink{classNodeCache_a3c3e2abe476346e2f1ec31ea6fc31111}{get\+\_\+next} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the next node. \end{DoxyCompactList}\item 
+void \hyperlink{classNodeCache_aa83c8629d2b01dfaa0149a63d17c31e1}{set\+\_\+data} (string data)
+\begin{DoxyCompactList}\small\item\em Set the new data to store in this node. \end{DoxyCompactList}\item 
+void \hyperlink{classNodeCache_af45873de5ff6c83e3b9d92832dec2199}{set\+\_\+key} (string key)
+\begin{DoxyCompactList}\small\item\em Set the new key to identify this node. \end{DoxyCompactList}\item 
+void \hyperlink{classNodeCache_ad733051c05052913ec36c01e7bbc1332}{set\+\_\+next} (\hyperlink{classNodeCache}{Node\+Cache} $\ast$next)
+\begin{DoxyCompactList}\small\item\em Set the new next node to this node. \end{DoxyCompactList}\item 
+bool \hyperlink{classNodeCache_aaa1cb454234f2e2485ddcda0aff3585e}{operator==} (const \hyperlink{classNodeCache}{Node\+Cache} \&node)
+\begin{DoxyCompactList}\small\item\em Overload of the comparison operator. Compare if two nodes are equal. \end{DoxyCompactList}\item 
+bool \hyperlink{classNodeCache_a1f82522f7c1c6bac65472eba595ddaa7}{operator!=} (const \hyperlink{classNodeCache}{Node\+Cache} \&node)
+\begin{DoxyCompactList}\small\item\em Overload of the different operator. Compare if two nodes are different. \end{DoxyCompactList}\item 
+void \hyperlink{classNodeCache_aea15a590ffd1d581ce889e6117daac24}{operator=} (const \hyperlink{classNodeCache}{Node\+Cache} \&node)
+\begin{DoxyCompactList}\small\item\em Copy the information from a node to other. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classNodeCache_a2d3b986da4a23b4a456738290cc0b94e}{operator$<$$<$} (ostream \&output, const \hyperlink{classNodeCache}{Node\+Cache} \&node)
+\begin{DoxyCompactList}\small\item\em Overload of the output operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Node class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Node\+Cache@{Node\+Cache}!Node\+Cache@{Node\+Cache}}
+\index{Node\+Cache@{Node\+Cache}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{Node\+Cache(string data, string key)}{NodeCache(string data, string key)}}]{\setlength{\rightskip}{0pt plus 5cm}Node\+Cache\+::\+Node\+Cache (
+\begin{DoxyParamCaption}
+\item[{string}]{data, }
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classNodeCache_adec4f6cc00d2453f4da34c06e241d874}{}\label{classNodeCache_adec4f6cc00d2453f4da34c06e241d874}
+
+
+Constuctor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & -\/ data to store. \\
+\hline
+{\em key} & -\/ key to identify this node. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Node\+Cache@{Node\+Cache}!get\+\_\+accessed@{get\+\_\+accessed}}
+\index{get\+\_\+accessed@{get\+\_\+accessed}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{get\+\_\+accessed()}{get_accessed()}}]{\setlength{\rightskip}{0pt plus 5cm}int Node\+Cache\+::get\+\_\+accessed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classNodeCache_a78c4d4818132f8acace40f5c9a95a526}{}\label{classNodeCache_a78c4d4818132f8acace40f5c9a95a526}
+
+
+Return how many accessed have had this node. 
+
+\begin{DoxyReturn}{Returns}
+how many accessed have had this node. 
+\end{DoxyReturn}
+\index{Node\+Cache@{Node\+Cache}!get\+\_\+data@{get\+\_\+data}}
+\index{get\+\_\+data@{get\+\_\+data}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{get\+\_\+data()}{get_data()}}]{\setlength{\rightskip}{0pt plus 5cm}string Node\+Cache\+::get\+\_\+data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classNodeCache_ae11cea2fa334e2f653d46938ac4c97a8}{}\label{classNodeCache_ae11cea2fa334e2f653d46938ac4c97a8}
+
+
+Returns the data stores in this node. 
+
+\begin{DoxyReturn}{Returns}
+data in this node. 
+\end{DoxyReturn}
+\index{Node\+Cache@{Node\+Cache}!get\+\_\+key@{get\+\_\+key}}
+\index{get\+\_\+key@{get\+\_\+key}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{get\+\_\+key()}{get_key()}}]{\setlength{\rightskip}{0pt plus 5cm}string Node\+Cache\+::get\+\_\+key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classNodeCache_a9d41e568632b7382a7f470c70c416028}{}\label{classNodeCache_a9d41e568632b7382a7f470c70c416028}
+
+
+Returns the key to identify this node. 
+
+\begin{DoxyReturn}{Returns}
+key to identify this node. 
+\end{DoxyReturn}
+\index{Node\+Cache@{Node\+Cache}!get\+\_\+next@{get\+\_\+next}}
+\index{get\+\_\+next@{get\+\_\+next}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{get\+\_\+next()}{get_next()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Cache} $\ast$ Node\+Cache\+::get\+\_\+next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classNodeCache_a3c3e2abe476346e2f1ec31ea6fc31111}{}\label{classNodeCache_a3c3e2abe476346e2f1ec31ea6fc31111}
+
+
+Returns a pointer to the next node. 
+
+\begin{DoxyReturn}{Returns}
+pointer to the next node. 
+\end{DoxyReturn}
+\index{Node\+Cache@{Node\+Cache}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{operator"!=(const Node\+Cache \&node)}{operator!=(const NodeCache &node)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Node\+Cache\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Node\+Cache} \&}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNodeCache_a1f82522f7c1c6bac65472eba595ddaa7}{}\label{classNodeCache_a1f82522f7c1c6bac65472eba595ddaa7}
+
+
+Overload of the different operator. Compare if two nodes are different. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & -\/ node wich it is compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false. 
+\end{DoxyReturn}
+\index{Node\+Cache@{Node\+Cache}!operator=@{operator=}}
+\index{operator=@{operator=}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{operator=(const Node\+Cache \&node)}{operator=(const NodeCache &node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Cache\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Node\+Cache} \&}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNodeCache_aea15a590ffd1d581ce889e6117daac24}{}\label{classNodeCache_aea15a590ffd1d581ce889e6117daac24}
+
+
+Copy the information from a node to other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & -\/ node with the information to copy. \\
+\hline
+\end{DoxyParams}
+\index{Node\+Cache@{Node\+Cache}!operator==@{operator==}}
+\index{operator==@{operator==}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{operator==(const Node\+Cache \&node)}{operator==(const NodeCache &node)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Node\+Cache\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Node\+Cache} \&}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNodeCache_aaa1cb454234f2e2485ddcda0aff3585e}{}\label{classNodeCache_aaa1cb454234f2e2485ddcda0aff3585e}
+
+
+Overload of the comparison operator. Compare if two nodes are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & -\/ node wich it is compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false. 
+\end{DoxyReturn}
+\index{Node\+Cache@{Node\+Cache}!set\+\_\+data@{set\+\_\+data}}
+\index{set\+\_\+data@{set\+\_\+data}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{set\+\_\+data(string data)}{set_data(string data)}}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Cache\+::set\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{string}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{classNodeCache_aa83c8629d2b01dfaa0149a63d17c31e1}{}\label{classNodeCache_aa83c8629d2b01dfaa0149a63d17c31e1}
+
+
+Set the new data to store in this node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & -\/ the new data to store. \\
+\hline
+\end{DoxyParams}
+\index{Node\+Cache@{Node\+Cache}!set\+\_\+key@{set\+\_\+key}}
+\index{set\+\_\+key@{set\+\_\+key}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{set\+\_\+key(string key)}{set_key(string key)}}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Cache\+::set\+\_\+key (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classNodeCache_af45873de5ff6c83e3b9d92832dec2199}{}\label{classNodeCache_af45873de5ff6c83e3b9d92832dec2199}
+
+
+Set the new key to identify this node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ the new key to identify this node. \\
+\hline
+\end{DoxyParams}
+\index{Node\+Cache@{Node\+Cache}!set\+\_\+next@{set\+\_\+next}}
+\index{set\+\_\+next@{set\+\_\+next}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{set\+\_\+next(\+Node\+Cache $\ast$next)}{set_next(NodeCache *next)}}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Cache\+::set\+\_\+next (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Cache} $\ast$}]{next}
+\end{DoxyParamCaption}
+)}\hypertarget{classNodeCache_ad733051c05052913ec36c01e7bbc1332}{}\label{classNodeCache_ad733051c05052913ec36c01e7bbc1332}
+
+
+Set the new next node to this node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next} & -\/ the new next node. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Node\+Cache@{Node\+Cache}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Node\+Cache@{Node\+Cache}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{output, }
+\item[{const {\bf Node\+Cache} \&}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classNodeCache_a2d3b986da4a23b4a456738290cc0b94e}{}\label{classNodeCache_a2d3b986da4a23b4a456738290cc0b94e}
+
+
+Overload of the output operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & -\/ pointer to the output. \\
+\hline
+{\em node} & -\/ the node to show. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the output of the contain of this node. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+nodecache.\+h\item 
+nodecache.\+cpp\end{DoxyCompactItemize}

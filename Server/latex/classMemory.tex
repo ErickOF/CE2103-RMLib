@@ -1,0 +1,245 @@
+\hypertarget{classMemory}{}\section{Memory Class Reference}
+\label{classMemory}\index{Memory@{Memory}}
+
+
+The \hyperlink{classMemory}{Memory} class.  
+
+
+
+
+{\ttfamily \#include $<$memory.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMemory_a585d7bb6fc6f2237bcebf94a86b7dd99}{Memory} ()\hypertarget{classMemory_a585d7bb6fc6f2237bcebf94a86b7dd99}{}\label{classMemory_a585d7bb6fc6f2237bcebf94a86b7dd99}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classMemory_a0ffa9759ebbf103f11132a505b93bdc0}{$\sim$\+Memory} ()\hypertarget{classMemory_a0ffa9759ebbf103f11132a505b93bdc0}{}\label{classMemory_a0ffa9759ebbf103f11132a505b93bdc0}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classMemory_a1c5845ec12edc89a46ae9a429751dad4}{add} (string data, string key)
+\begin{DoxyCompactList}\small\item\em Appends the specified node to the end of this list. \end{DoxyCompactList}\item 
+bool \hyperlink{classMemory_ab7f1b528e6d338a6e8a34213e84428f8}{exist} (string key)
+\begin{DoxyCompactList}\small\item\em Verify if the key is this list. \end{DoxyCompactList}\item 
+\hyperlink{classNodeMemory}{Node\+Memory} $\ast$ \hyperlink{classMemory_abad3ec0c9cd654bed7dbbc94f84d7109}{get} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the node at the specified position in this list. \end{DoxyCompactList}\item 
+\hyperlink{classNodeMemory}{Node\+Memory} $\ast$ \hyperlink{classMemory_a4e46131b5a3dbf96258d7c5ebe665f32}{get} (string key)
+\begin{DoxyCompactList}\small\item\em Returns the node with the specified key in this list. \end{DoxyCompactList}\item 
+int \hyperlink{classMemory_a1c3e9773bfe8ca3f70cfdfd1400b5851}{get\+\_\+size} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of elements in this list. \end{DoxyCompactList}\item 
+void \hyperlink{classMemory_a75a4c6877d75391b28778671cbd523b4}{remove} (int index)
+\begin{DoxyCompactList}\small\item\em Removes the element at the specified position in this list. \end{DoxyCompactList}\item 
+void \hyperlink{classMemory_a3a048dda4d162dcd396bcc2e1f454bfb}{remove} (string key)
+\begin{DoxyCompactList}\small\item\em Removes the element witht the specified key in this list. \end{DoxyCompactList}\item 
+\hyperlink{classNodeMemory}{Node\+Memory} $\ast$ \hyperlink{classMemory_a1a56f0b08a50f64a526b8a0712ea8f5f}{operator\mbox{[}$\,$\mbox{]}} (int index)
+\begin{DoxyCompactList}\small\item\em operator \mbox{[}\mbox{]} \end{DoxyCompactList}\item 
+\hyperlink{classNodeMemory}{Node\+Memory} $\ast$ \hyperlink{classMemory_a5bd91f228b80bfd56b3bf82ebc16f41f}{operator\mbox{[}$\,$\mbox{]}} (string key)
+\begin{DoxyCompactList}\small\item\em Overload of the subscript operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classMemory}{Memory} class. 
+
+\subsection{Member Function Documentation}
+\index{Memory@{Memory}!add@{add}}
+\index{add@{add}!Memory@{Memory}}
+\subsubsection[{\texorpdfstring{add(string data, string key)}{add(string data, string key)}}]{\setlength{\rightskip}{0pt plus 5cm}void Memory\+::add (
+\begin{DoxyParamCaption}
+\item[{string}]{data, }
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classMemory_a1c5845ec12edc89a46ae9a429751dad4}{}\label{classMemory_a1c5845ec12edc89a46ae9a429751dad4}
+
+
+Appends the specified node to the end of this list. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em string} & -\/ if the key already exists. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em data} & -\/ data to store. \\
+\hline
+{\em key} & -\/ key as identifier of node. \\
+\hline
+\end{DoxyParams}
+\index{Memory@{Memory}!exist@{exist}}
+\index{exist@{exist}!Memory@{Memory}}
+\subsubsection[{\texorpdfstring{exist(string key)}{exist(string key)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Memory\+::exist (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classMemory_ab7f1b528e6d338a6e8a34213e84428f8}{}\label{classMemory_ab7f1b528e6d338a6e8a34213e84428f8}
+
+
+Verify if the key is this list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ key as identifier of node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\index{Memory@{Memory}!get@{get}}
+\index{get@{get}!Memory@{Memory}}
+\subsubsection[{\texorpdfstring{get(int index)}{get(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Memory} $\ast$ Memory\+::get (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classMemory_abad3ec0c9cd654bed7dbbc94f84d7109}{}\label{classMemory_abad3ec0c9cd654bed7dbbc94f84d7109}
+
+
+Returns the node at the specified position in this list. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em out\+\_\+of\+\_\+range} & -\/ if the index is out of range (index $<$ 0 $\vert$$\vert$ index $>$= size()). \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ index of the node to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the node at the specified position in this list. 
+\end{DoxyReturn}
+\index{Memory@{Memory}!get@{get}}
+\index{get@{get}!Memory@{Memory}}
+\subsubsection[{\texorpdfstring{get(string key)}{get(string key)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Memory} $\ast$ Memory\+::get (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classMemory_a4e46131b5a3dbf96258d7c5ebe665f32}{}\label{classMemory_a4e46131b5a3dbf96258d7c5ebe665f32}
+
+
+Returns the node with the specified key in this list. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em exception} & -\/ if the key is not found. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ key of the node to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the node with the specified key in this list. 
+\end{DoxyReturn}
+\index{Memory@{Memory}!get\+\_\+size@{get\+\_\+size}}
+\index{get\+\_\+size@{get\+\_\+size}!Memory@{Memory}}
+\subsubsection[{\texorpdfstring{get\+\_\+size()}{get_size()}}]{\setlength{\rightskip}{0pt plus 5cm}int Memory\+::get\+\_\+size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMemory_a1c3e9773bfe8ca3f70cfdfd1400b5851}{}\label{classMemory_a1c3e9773bfe8ca3f70cfdfd1400b5851}
+
+
+Returns the number of elements in this list. 
+
+\begin{DoxyReturn}{Returns}
+the number of elements in this list. 
+\end{DoxyReturn}
+\index{Memory@{Memory}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Memory@{Memory}}
+\subsubsection[{\texorpdfstring{operator[](int index)}{operator[](int index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Memory}$\ast$ Memory\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMemory_a1a56f0b08a50f64a526b8a0712ea8f5f}{}\label{classMemory_a1a56f0b08a50f64a526b8a0712ea8f5f}
+
+
+operator \mbox{[}\mbox{]} 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em out\+\_\+of\+\_\+range} & -\/ if the index is out of range (index $<$ 0 $\vert$$\vert$ index $>$= size()). \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ index of the node to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the node at the specified position in this cache. 
+\end{DoxyReturn}
+\index{Memory@{Memory}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Memory@{Memory}}
+\subsubsection[{\texorpdfstring{operator[](string key)}{operator[](string key)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Memory}$\ast$ Memory\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMemory_a5bd91f228b80bfd56b3bf82ebc16f41f}{}\label{classMemory_a5bd91f228b80bfd56b3bf82ebc16f41f}
+
+
+Overload of the subscript operator. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em exception} & -\/ if the key is not found. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ key of the node to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the node with the specified key in this cache. 
+\end{DoxyReturn}
+\index{Memory@{Memory}!remove@{remove}}
+\index{remove@{remove}!Memory@{Memory}}
+\subsubsection[{\texorpdfstring{remove(int index)}{remove(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void Memory\+::remove (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classMemory_a75a4c6877d75391b28778671cbd523b4}{}\label{classMemory_a75a4c6877d75391b28778671cbd523b4}
+
+
+Removes the element at the specified position in this list. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em out\+\_\+of\+\_\+range} & -\/ if the index is out of range (index $<$ 0 $\vert$$\vert$ index $>$= size()). \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ the index of the element to be removed. \\
+\hline
+\end{DoxyParams}
+\index{Memory@{Memory}!remove@{remove}}
+\index{remove@{remove}!Memory@{Memory}}
+\subsubsection[{\texorpdfstring{remove(string key)}{remove(string key)}}]{\setlength{\rightskip}{0pt plus 5cm}void Memory\+::remove (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classMemory_a3a048dda4d162dcd396bcc2e1f454bfb}{}\label{classMemory_a3a048dda4d162dcd396bcc2e1f454bfb}
+
+
+Removes the element witht the specified key in this list. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em exception} & -\/ if the key is not found. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ key of the node to remove for. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+memory.\+h\item 
+memory.\+cpp\end{DoxyCompactItemize}

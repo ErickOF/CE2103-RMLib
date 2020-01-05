@@ -1,5 +1,19 @@
 # RMLib
 
+#### Curso CE2103
+
+#### Algoritmos y Estructuras de Datos II
+
+#### Grupo 1
+
+#### Elaborado por:
+* Erick Obregón Fonseca 2016123157
+
+#### Profesor del curso:
+* Jose Isaac Ramirez Herrera
+
+#### Semestre II 
+#### 2017
 
 
 ## Introducción
